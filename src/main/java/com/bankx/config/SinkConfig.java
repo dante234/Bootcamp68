@@ -7,8 +7,8 @@ import reactor.core.publisher.Sinks;
 
 @Configuration
 class SinkConfig {
-    @Bean
+  @Bean
     public Sinks.Many<Transaction> txSink() {
-        return Sinks.many().multicast().onBackpressureBuffer();
-    }
+    return Sinks.many().multicast().onBackpressureBuffer();
+  }
 }

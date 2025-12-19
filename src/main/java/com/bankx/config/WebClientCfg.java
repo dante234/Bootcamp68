@@ -6,8 +6,8 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
 class WebClientCfg {
-    @Bean
+  @Bean
     WebClient riskWebClient() {
-        return WebClient.builder().baseUrl("http://localhost:8080/mock/risk").build();
-    }
+    return WebClient.builder().baseUrl("http://localhost:8080/mock/risk").build();
+  }
 }

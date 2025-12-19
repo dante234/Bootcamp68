@@ -12,23 +12,23 @@ import org.springframework.web.reactive.function.client.WebClient;
 @SpringBootTest
 class BankxApplicationTests {
 
-	@MockBean
-	private WebClient riskWebClient;
+  @MockBean
+    private WebClient riskWebClient;
 
-	@MockBean
-	private AccountRepository accountRepository;
+  @MockBean
+    private AccountRepository accountRepository;
 
-	@MockBean
-	private TransactionRepository transactionRepository;
+  @MockBean
+    private TransactionRepository transactionRepository;
 
-	@MockBean
-	private RiskRuleRepository riskRuleRepository;
+  @MockBean
+    private RiskRuleRepository riskRuleRepository;
 
-	@MockBean
-	private DataSeeder dataSeeder;
+  @MockBean
+    private DataSeeder dataSeeder;
 
-	@Test
-	void contextLoads() {
-	}
+  @Test
+    void contextLoads() {
+  }
 
 }

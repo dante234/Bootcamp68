@@ -1,9 +1,12 @@
 package com.bankx.legacy;
 
+import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Optional;
-
+/**
+ * Repository for managing {@link RiskRule} entities.
+ */
 public interface RiskRuleRepository extends JpaRepository<RiskRule, Long> {
-    Optional<RiskRule> findFirstByCurrency(String currency);
+
+  Optional<RiskRule> findFirstByCurrency(String currency);
 }
